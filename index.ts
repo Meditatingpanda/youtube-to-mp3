@@ -19,9 +19,10 @@ app.get("/", async (req: Request, res: Response) => {
     // info: info.formats.sort((a:videoFormat, b:videoFormat) => {
     //   return true;
     // }),
-    info: info.formats.sort((a: videoFormat, b: videoFormat) => {
-      return a.mimeType > b.mimeType ? 1 : -1;
-    }),
+    // info: info.formats.sort((a: videoFormat, b: videoFormat) => {
+    //   return a.mimeType > b.mimeType ? 1 : -1;
+    // }),
+    info:info.formats   
   };
 
   res.status(200).json(Data);
